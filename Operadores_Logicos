@@ -1,0 +1,53 @@
+void main () {
+ /*Comparadores 
+  * -----------
+  * > maior 
+  * >= maior igaul 
+  * < menor 
+  * < menor igual 
+  * == igaul 
+  * != diferente */ 
+  // Bool = Verdadeiro ou falso 
+  //bool testeComp = (10 > 20);
+  double num1 = 15.0;
+  bool testeComp = (10!= num1);    
+  print('Comp: $testeComp');
+  
+  /* operador OR
+   * -----------
+   * true   true  -> true 
+   * true   false -> true 
+   * false  true  -> true 
+   * false  false -> false
+   * mas o que é este OR, ele simplemente  vai verificar se um dos valores é verdadeiro ele é   representado
+   * assim : || alt+124
+   * se eu colocar 
+   * bool testeOr = (false || false);
+   * ele retorna false
+   * Or seguinifica um ou outro 
+   * */
+  
+  bool testeOr = (true || false);
+  print ('OR: $testeOr');
+  
+  /*Operador AND 
+   * -----------
+   * true  true -> true
+   * true false -> false 
+   * true  true -> false 
+   * true false -> false 
+   * O que o AND significa ele so vai retorna o v quando o primeiro e o segundo for v 
+   */
+  
+  bool testeAnd = (false && true);
+  print ("and: $testeAnd");
+  
+  // aqui ele esta primeiro fazendo uma comparação e o resultado ele faz um and 
+  
+  bool complexa = (10 > 20 ) && ((30 < 20) || testeAnd);
+  print (complexa);
+  
+  // se eu colocar isso ele muda o resultado mas so se for antes de um booleano 
+  print (!false);
+  
+}
