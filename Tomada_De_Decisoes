@@ -1,0 +1,62 @@
+void main () {
+  double nota = 8.0;
+  
+  if(nota < 5.0 ) {
+    print ('Exame! :(');
+  } else if (nota ==10.0) {
+    print ('Sucesso total!');
+    /*Pode se colocar quantos else if quiser...*/
+  }else if (nota == 9.9) {
+    print('Quase sucesso Total');
+  }else {
+    print ('Sucesso! :)');
+  }
+  
+  /*Agora observe esta nova variavel
+   * 
+   * Operador ternario */
+  
+  bool aprovado = true;
+  String info;
+  
+  if (aprovado){
+    info = 'Aprovado!!!!';
+  } else {
+    info = 'Reprovado...';
+  }
+  /*Porem isso fica feio e temos outra forma de fazer esta operação*/
+  
+  /*O que esta acontecendo aqui em baixo:
+   * 
+   * estou dizendo que info é igual a aprovado e ao colocar o ponto de interrogação 
+   * ele vai pegar a variavel aprovado e se for verdadeiro ela vai pegar a primeira coisa
+   * depois do ponto de interrogação (a primeira coisa sendo o APROVADO ) logo em seguida 
+   * temos o dois pontos onde ele vai ser vir como um else dizendo que se não for verdae 
+   * ele executara a segunda variavel no caso (REPROVADO)
+   * 
+   * No caso ele esta pegando o valor da variavel aprovado e se caso for verdadeiro 
+   * ira colocar o texto aprovado no lugar de info e se for falso vai colocar no lugar de 
+   * info REPROVADO, logo em seguida damos um print 
+   * */
+  info = aprovado ? 'Aprovado' : 'Reprovado';
+  print (info);
+  
+  /* O que esta acontecendo 
+   * 
+   * String nome; = null ou seja se vc colocar so String nome ele fica vazio
+   * 
+   * o que é ?? = ele esta fazendo o seguinte se esta variavel nome for diferente de null 
+   * ele vai colocar o proprio valor dela se o valor for null ele vai cai colocar a mensagem 
+   * informa no segundo campos apos os (??)
+   * 
+   * */
+  
+  String  nome = 'Gregory';
+  String info2 = nome ?? 'Não informado!';
+  print(info2);
+  
+  
+  
+  print ('Fim');
+
+}
