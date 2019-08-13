@@ -1,0 +1,30 @@
+void main(){
+//Implementando uma loja 
+  
+  String nome = "Loja do Gregory";
+  int bananas = 5; // tambem podemos tirar o valor de bananas e declara na parte de baixo 
+  double preco = 10.50;
+  // bool valor verdadeiro ou falso 
+  bool aindaTem= true; //aqui pode se colocar true ou falso 
+  
+  // se colocarmos a vaiavel bananas = 10 ao lado mudara para 10 bananas 
+  
+  print ("O nome da loja é " + nome); // pode tamebm se utilizar dentro do "O nome da loja é $nome"
+  print ("a $nome tem $bananas bananas");
+  
+  
+  //bananas = 10;
+  
+  dynamic teste =1;
+  print(teste);
+  teste = "hahahaha";
+  print (teste);
+  // neste caso o dynamic não tem um tipo definido logo aqui funciona enquanto o de baixo não 
+  
+  
+  /*var teste = 1;
+  print(teste);
+  teste = "HAHAHA";
+  Não roda pois ela é int inicialmente var já tem um tipo definido 
+  */
+}
