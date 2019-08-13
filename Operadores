@@ -1,0 +1,25 @@
+void main () {
+  
+  double num1 = 10.0;
+  double num2 = 20.0;
+  
+  double result = num1 + num2;// * multiplicação 
+  //double result = (num1 + num2) - 30.0; tambem podemos brincar com as expressoes aritimetricas 
+  print (result);
+  //podemos tambem fazer o operador resumido mas este tipo de expressão é feio
+  //num1 = num1 + 15;
+  //print(num1);
+  //para deixar correto basta 
+  num1 += 15;
+  //uma outra forma que podemos fazer é utilizando assim  
+  //num1 += 1 ;
+  //porem para ficar mais bonito basta utilizar 
+  num1 ++;
+  //tamebm temos 
+  //num--;
+  //tambem podemos comocar lá em cima 
+  // num1 *= 15;
+  // nesta parte ele vai pegar o num1 e fazer a multiplicação e subtrair 1
+  print(num1);
+  
+}
